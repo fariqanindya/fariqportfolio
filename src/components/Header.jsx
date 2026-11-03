@@ -6,33 +6,18 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 const navLinks = [
   {
     name: "Home",
-    href: "/#home",
+    href: "/",
     section: "home",
   },
   {
     name: "About",
-    href: "/#about",
+    href: "/about",
     section: "about",
-  },
-  {
-    name: "Experience",
-    href: "/#experience",
-    section: "experience",
-  },
-  {
-    name: "Achievements",
-    href: "/#achievements",
-    section: "achievements",
   },
   {
     name: "Projects",
     href: "/projects",
     section: "projects",
-  },
-  {
-    name: "Contact",
-    href: "/#contact",
-    section: "contact",
   },
 ];
 
@@ -43,10 +28,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  const isProjectsPage = location.pathname === "/projects";
+  const isSubPage = location.pathname !== "/";
 
   // ==========================================
-  // SCROLL DETECTION
+  // SCROLL DETECTION (ON HOMEPAGE)
   // ==========================================
 
   useEffect(() => {
@@ -57,21 +42,14 @@ const Header = () => {
         return;
       }
 
-      const sections = [
-        "home",
-        "about",
-        "experience",
-        "achievements",
-        "projects",
-        "contact",
-      ];
+      const sections = ["home", "about", "projects", "contact"];
 
       let currentSection = "home";
 
       for (const section of [...sections].reverse()) {
         const element = document.getElementById(section);
 
-        if (element && window.scrollY >= element.offsetTop - 150) {
+        if (element && window.scrollY >= element.offsetTop - 160) {
           currentSection = section;
           break;
         }
@@ -106,14 +84,9 @@ const Header = () => {
   const handleNavigation = (link) => {
     setIsMenuOpen(false);
 
-    // If we're already on the homepage and the user
-    // clicks a section link, scroll to that section.
     if (location.pathname === "/" && link.href.startsWith("/#")) {
       const sectionId = link.section;
 
-      // A normal Link won't trigger a location change
-      // when clicking the same hash again.
-      // This ensures scrolling always works.
       window.setTimeout(() => {
         const element = document.getElementById(sectionId);
 
@@ -127,20 +100,44 @@ const Header = () => {
     }
   };
 
+  const handleContactClick = (e) => {
+    setIsMenuOpen(false);
+
+    if (location.pathname === "/") {
+      e.preventDefault();
+      const element = document.getElementById("contact");
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        window.history.pushState(null, "", "#contact");
+      }
+    }
+  };
+
   // ==========================================
-  // ACTIVE NAVIGATION
+  // ACTIVE NAVIGATION CHECK
   // ==========================================
 
   const checkIsActive = (link) => {
-    if (link.section === "projects") {
-      return isProjectsPage;
+    if (link.href === "/about") {
+      return (
+        location.pathname === "/about" ||
+        (location.pathname === "/" && activeSection === "about")
+      );
+    }
+    if (link.href === "/projects") {
+      return (
+        location.pathname === "/projects" ||
+        (location.pathname === "/" && activeSection === "projects")
+      );
+    }
+    if (link.href === "/") {
+      return location.pathname === "/" && (activeSection === "home" || !activeSection);
     }
 
-    if (isProjectsPage) {
-      return false;
-    }
-
-    return activeSection === link.section;
+    return false;
   };
 
   return (
@@ -156,16 +153,16 @@ const Header = () => {
           duration: 0.7,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className="fixed top-0 left-0 z-50 w-full px-4 py-4 md:px-8"
+        className="fixed top-0 left-0 z-50 w-full px-4 py-3.5 sm:px-6 sm:py-4 md:px-8"
       >
         <div
           className={`
             mx-auto flex max-w-7xl items-center
             justify-between rounded-2xl
-            border px-6 py-4
+            border px-5 py-3 sm:px-6 sm:py-3.5
             transition-all duration-500
             ${
-              isScrolled || isProjectsPage
+              isScrolled || isSubPage
                 ? "border-[#E8E6DC] bg-[#F8F7F2]/90 shadow-lg shadow-black/5 backdrop-blur-xl"
                 : "border-transparent bg-transparent"
             }
@@ -198,7 +195,7 @@ const Header = () => {
           {/* DESKTOP NAVIGATION */}
           {/* ================================= */}
 
-          <nav className="hidden items-center gap-5 lg:gap-8 md:flex">
+          <nav className="hidden items-center gap-7 lg:gap-10 md:flex">
             {navLinks.map((link) => {
               const isActive = checkIsActive(link);
 
@@ -239,16 +236,11 @@ const Header = () => {
 
           <Link
             to="/#contact"
-            onClick={() =>
-              handleNavigation({
-                href: "/#contact",
-                section: "contact",
-              })
-            }
+            onClick={handleContactClick}
             className="
               group hidden items-center gap-2
               rounded-full bg-[#16382E]
-              px-5 py-3 text-sm font-medium
+              px-5 py-2.5 text-sm font-medium
               text-[#F8F7F2]
               transition-all duration-300
               hover:-translate-y-0.5
@@ -260,7 +252,7 @@ const Header = () => {
           >
             Let's Talk
             <ArrowUpRight
-              size={16}
+              size={15}
               className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
             />
           </Link>
@@ -305,13 +297,13 @@ const Header = () => {
               y: -20,
             }}
             transition={{
-              duration: 0.3,
+              duration: 0.25,
             }}
             className="
-              fixed top-24 right-4 left-4 z-40
+              fixed top-20 right-4 left-4 z-40
               rounded-2xl border border-[#E8E6DC]
-              bg-[#F8F7F2] p-6
-              shadow-xl md:hidden
+              bg-[#F8F7F2]/95 backdrop-blur-xl p-5
+              shadow-2xl md:hidden
             "
           >
             <nav className="flex flex-col gap-2">
@@ -330,7 +322,7 @@ const Header = () => {
                       x: 0,
                     }}
                     transition={{
-                      delay: index * 0.06,
+                      delay: index * 0.05,
                     }}
                   >
                     <Link
@@ -356,16 +348,11 @@ const Header = () => {
               {/* MOBILE CTA */}
               <Link
                 to="/#contact"
-                onClick={() =>
-                  handleNavigation({
-                    href: "/#contact",
-                    section: "contact",
-                  })
-                }
+                onClick={handleContactClick}
                 className="
-                  mt-4 flex items-center justify-between
+                  mt-3 flex items-center justify-between
                   rounded-xl bg-[#16382E]
-                  px-5 py-4 font-medium text-white
+                  px-5 py-3.5 font-medium text-white
                 "
               >
                 Let's Talk
