@@ -86,8 +86,8 @@ export const languages = [
   },
   {
     name: "English",
-    level: "Basic / Professional",
-    proficiency: "65%",
+    level: "Intermediate",
+    proficiency: "50%",
   },
 ];
 
