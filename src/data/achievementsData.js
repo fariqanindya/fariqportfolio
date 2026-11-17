@@ -49,8 +49,112 @@ export const competitions = [
 
     credential: "https://drive.google.com/file/d/10Hrq-bEyo4064qpAH4f1hcMQrcug_K-c/view",
   },
+
   {
     id: 2,
+    title: "Marketeers X Travoy WOW Competition",
+    company: "Marketeers",
+    organizer: "Marketeers",
+    role: "Team Leader",
+    achievement: "Participant",
+    period: "Mar - Apr 2026",
+    date: "Mar - Apr 2026",
+    location: "National",
+    type: "Marketing Case",
+    highlight: "Marketing Strategy, O2O Marketing, Marketing Case",
+    image: "/achievements/Travoy Achievements.png",
+    description:
+      "Engineered a 12-month strategic roadmap to reposition Travoy from a passive toll application into an integrated digital mobility ecosystem for Gen Z.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "22.2M", label: "Target Market (Gen Z)" },
+      { value: "1M", label: "e-Money Acquisitions" },
+      { value: "40%", label: "Tap-to-Install Conversion" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Led a 3-person team, analyzing the Gen Z market to define Travoy's core adoption problem and guide our strategy for 22.23M users.",
+      "Researched market gaps to help the team shape the Mandiri NFC card idea, aiming for a realistic 40% tap-to-install conversion.",
+      "Delegated tasks based on team strengths, smoothly collaborating to build a multichannel strategy using TikTok, X, and QR codes.",
+      "Designed the final presentation deck layout, logically structuring our ideas on KOLs and offline booths to clearly tell our story.",
+      "Guided the team's financial decisions on a Rp 1B budget, easily adapting our plan to keep the Cost Per Install below Rp 5,000.",
+    ],
+
+    skills: [
+      "Team Leadership",
+      "Structured Thinking",
+      "Brand Repositioning",
+      "O2O Marketing",
+      "Market Sizing",
+      "Budget Management",
+      "Risk Management",
+    ],
+
+    tools: [
+      "Strategic Framework",
+      "Google Form",
+      "Google Sheet",
+      "Canva",
+    ],
+
+    credential: "https://drive.google.com/file/d/1rgm9LFIA9NVsA3hrUVAj2fyxsVP8SufS/view",
+  },
+
+  {
+    id: 3,
+    title: "IMOTION Marketing Plan Competition",
+    company: "IMOTION FEB UI",
+    organizer: "IMOTION FEB UI",
+    role: "Team Member",
+    achievement: "Participant",
+    period: "Oct 2025",
+    date: "Oct 2025",
+    location: "National",
+    type: "Marketing Case",
+    highlight: "Marketing Strategy, Financial Modeling, Gen Z Market",
+    image: "/achievements/IMOTION UI Achievements.png",
+    description:
+      "Collaborated in a 4-person team to formulate a comprehensive marketing strategy positioning by.U as 'The Ultimate Second SIM' for Gen Z.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "150K", label: "New Gross Adds Target" },
+      { value: "3.12", label: "Cost-Benefit Ratio" },
+      { value: "Rp4.8K", label: "Acquisition Cost (CAC)" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Collaborated to formulate 'The Ultimate Second SIM' positioning to overcome Gen Z's switching cost barrier without replacing their primary number.",
+      "Conducted TOWS and PEST analyses to evaluate dual-SIM market opportunities and mitigate oligopolistic industry threats.",
+      "Contributed to designing persona-based 'Mode Instan' and gamified loyalty programs like 'by.U Squad'.",
+      "Assisted in building a 3-month financial projection, achieving a highly efficient CAC of Rp 4,848 against a CLTV of Rp 166,909.",
+      "Structured an integrated 4-pillar execution timeline across Engagement, Acquisition, Revenue, and Loyalty phases.",
+    ],
+
+    skills: [
+      "Structured Thinking",
+      "Marketing Strategy",
+      "Market Segmentation",
+      "Financial Projection",
+      "Consumer Behavior",
+    ],
+
+    tools: [
+      "Strategic Framework",
+      "Microsoft Excel",
+      "Google Form",
+      "Google Docs",
+      "Canva",
+    ],
+
+    credential: "https://drive.google.com/file/d/1wP3Ts2quUxorzCvaliZ2YdgdVIvO2d-x/view",
+  },
+
+  {
+    id: 4,
     title: "Enterns UI x Wondr by BNI ENTERNS UI Business Case Competition",
     company: "Enterns UI x Wondr by BNI",
     organizer: "Enterns UI x Wondr by BNI",
@@ -100,8 +204,9 @@ export const competitions = [
 
     credential: "https://drive.google.com/file/d/1huU3lL09eTmBXkapW6hjBhXzbRCzr3-D/view",
   },
+
   {
-    id: 3,
+    id: 5,
     title: "Market Town Business Case Competition",
     company: "Market Town",
     organizer: "BEM Kema Unpad",
@@ -163,7 +268,7 @@ export const certifications = [
     location: "Online",
     type: "Language Proficiency",
     highlight: "Valid through 2028",
-    image: "/achievements/generic.svg",
+    image: "/achievements/English Test Achievements.png",
     description:
       "Demonstrated professional English listening comprehension, grammatical accuracy, and reading proficiency.",
 
@@ -205,7 +310,7 @@ export const certifications = [
     location: "Online",
     type: "Leadership",
     highlight: "Problem solving, resilience & agile digital mindset",
-    image: "/achievements/mckinsey.svg",
+    image: "/achievements/McKinseyorg Achievements.png",
     description:
       "Completed McKinsey's flagship leadership development initiative focused on structured thinking, adaptability, and high-impact digital execution.",
 
@@ -249,7 +354,7 @@ export const certifications = [
     location: "Online",
     type: "Data Analytics",
     highlight: "SQL, Python, visualization & business dashboards",
-    image: "/achievements/generic.svg",
+    image: "/achievements/MySkill Achievements.png",
     description:
       "Mastered end-to-end data analytics workflow spanning relational databases, Python data processing, and interactive business intelligence dashboards.",
 

@@ -59,121 +59,7 @@ export const projects = [
 
   {
     id: 2,
-    slug: "biteship-valuation",
-    title: "Biteship Valuation Project",
-    shortTitle: "Biteship Valuation",
-    company: "Biteship",
-    role: "Team Member",
-    type: "Valuation Project",
-    category: "Business",
-    location: "Jatinangor, Indonesia",
-    period: "Feb - Jun 2024",
-    year: "2024",
-    image: "/projects/Biteship Valuation Projects.png",
-    description:
-      "Conducted startup valuation research using multiple valuation frameworks, comparable startup benchmarks, and investment risk assessments.",
-
-    // 3 Point out number
-    highlights: [
-      { value: "$13.1M", label: "Max Valuation Range Estimated" },
-      { value: "6", label: "Southeast Asian Benchmarks" },
-      { value: "12", label: "Investment Risks Evaluated" },
-    ],
-
-    // What I did
-    responsibilities: [
-      "Gathered data for Berkus, Scorecard, and Risk Factor Summation frameworks, helping the team project a $1.9M to $13.1M startup value.",
-      "Researched 6 SEA startups to find a $12.55M average valuation, providing a clear data baseline for our team's analysis. ",
-      "Collected data on 12 investment risks, helping the team identify operational and competitor vulnerabilities. ",
-      "Tracked 800% growth data and team profiles, clearly communicating facts to support the team's strategic assessment.",
-      "Compiled market facts to back up investment conclusions, helping the team make confident decisions on VC funding needs.",
-    ],
-
-    skills: [
-      "Startup Valuation",
-      "Financial Analysis",
-      "Peer Benchmarking",
-      "Risk Assessment",
-      "Due Diligence",
-    ],
-
-    tools: [
-      "Valuation Frameworks",
-      "Google Sheet",
-      "Google Docs",
-      "Canva",
-    ],
-
-    tags: [
-      "Startup Valuation",
-      "Financial Analysis",
-      "Market Research",
-      "Risk Assessment",
-    ],
-
-    credential: "https://drive.google.com/file/d/10o1wAM9BORKwy4OTcA5HzrN99VMBeMZh/view",
-  },
-
-  {
-    id: 3,
-    slug: "ihana-socks-analysis",
-    title: "Ihana Socks Data Analysis",
-    shortTitle: "Ihana Socks",
-    company: "Ihana Socks",
-    role: "Lead Data Analyst",
-    type: "Data Analytics Project",
-    category: "Data",
-    location: "Bandung, Indonesia",
-    period: "Sep - Dec 2023",
-    year: "2023",
-    image: "/projects/Ihana Projects.png",
-    description:
-      "Analyzed sales performance using SQL, KNIME, and Tableau to identify opportunities for inventory optimization, sales growth, and better business decisions.",
-
-    // 3 Point out number
-    highlights: [
-      { value: "65K+", label: "E-Commerce Rows Cleaned" },
-      { value: "4", label: "Analytics Team Members Led" },
-      { value: "3", label: "Core Strategic Initiatives" },
-    ],
-
-    // What I did
-    responsibilities: [
-      "Led a 4-person team and managed client communication to clearly define goals for optimizing Shopee sales and reducing dead stock.",
-      "Conducted cleaning 65K+ rows of messy data in Excel, easily adapting to solve complex outlier issues.",
-      "Did hands-on analysis using PostgreSQL and KNIME, applying critical thinking to run forecasting models with the team.",
-      "Built clear Tableau dashboards to visualize data, logically structuring our findings into a consulting deck for the client.",
-      "Delivered 3 key strategies to the client, helping them make confident business decisions on product bundling and holiday sales.",
-    ],
-
-    skills: [
-      "Business Intelligence",
-      "Data Cleaning",
-      "Data Analysis",
-      "Data Visualization",
-      "Dashboard",
-      "Client Presentation",
-    ],
-
-    tools: [
-      "PostgreSQL",
-      "KNIME",
-      "Tableau",
-      "Microsoft Excel",
-    ],
-
-    tags: [
-      "Business Intelligence",
-      "Data Analysis",
-      "KNIME",
-    ],
-
-    credential: "https://drive.google.com/file/d/16eFZKWxdYZKRGySMO24M48QGBPvCUIkD/view",
-  },
-
-  {
-    id: 4,
-    slug: "travoy-marketing-plan",
+    slug: "travoy-marketing-case",
     title: "Marketeers X Travoy WOW Competition",
     shortTitle: "Travoy Gen Z Strategy",
     company: "Travoy",
@@ -205,6 +91,7 @@ export const projects = [
 
     skills: [
       "Team Leadership",
+      "Structured Thinking",
       "Brand Repositioning",
       "O2O Marketing",
       "Market Sizing",
@@ -229,6 +116,121 @@ export const projects = [
   },
 
   {
+    id: 3,
+    slug: "byu-marketing-plan-imotion",
+    title: "IMOTION Marketing Plan Competition",
+    shortTitle: "by.U Gen Z Strategy",
+    company: "IMOTION FEB UI",
+    role: "Team Member",
+    type: "Marketing Competition",
+    category: "Marketing",
+    location: "Bandung, Indonesia",
+    period: "Oct 2025",
+    year: "2025",
+    image: "/projects/IMOTION UI Projects.png",
+    description:
+      "Collaborated in a 4-person team to formulate a comprehensive marketing strategy positioning by.U as 'The Ultimate Second SIM' for Gen Z.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "150K", label: "New Gross Adds Target" },
+      { value: "3.12", label: "Cost-Benefit Ratio" },
+      { value: "Rp4.8K", label: "Acquisition Cost (CAC)" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Collaborated to formulate 'The Ultimate Second SIM' positioning to overcome Gen Z's switching cost barrier without replacing their primary number.",
+      "Conducted TOWS and PEST analyses to evaluate dual-SIM market opportunities and mitigate oligopolistic industry threats.",
+      "Contributed to designing persona-based 'Mode Instan' and gamified loyalty programs like 'by.U Squad'.",
+      "Assisted in building a 3-month financial projection, achieving a highly efficient CAC of Rp 4,848 against a CLTV of Rp 166,909.",
+      "Structured an integrated 4-pillar execution timeline across Engagement, Acquisition, Revenue, and Loyalty phases.",
+    ],
+
+    skills: [
+      "Structured Thinking",
+      "Marketing Strategy",
+      "Market Segmentation",
+      "Financial Projection",
+      "Consumer Behavior",
+    ],
+
+    tools: [
+      "Strategic Framework",
+      "Microsoft Excel",
+      "Google Form",
+      "Google Docs",
+      "Canva",
+    ],
+
+    tags: [
+      "Marketing Strategy",
+      "Financial Modeling",
+      "Gen Z Market",
+    ],
+
+    credential: "https://drive.google.com/file/d/1wP3Ts2quUxorzCvaliZ2YdgdVIvO2d-x/view",
+  },
+
+  {
+    id: 4,
+    slug: "prochiz-strategic-management-analysis",
+    title: "PT Mulia Boga Raya Tbk: Strategic Management",
+    shortTitle: "Prochiz Strategy Analysis",
+    company: "Prochiz",
+    role: "Team Member",
+    type: "Strategic Management Case Study",
+    category: "Business",
+    location: "Jatinangor, Indonesia",
+    period: "Aug - Dec 2024",
+    year: "2024",
+    image: "/projects/Prochiz Projects.png",
+    description:
+      "Collaborated in a 5-person team to conduct a comprehensive strategic management analysis, financial evaluation, and 2025 growth roadmap for PT Mulia Boga Raya Tbk (Prochiz).",
+
+    // 3 Point out number
+    highlights: [
+      { value: "4", label: "Dairy Players Benchmarked" },
+      { value: "Rp 20B", label: "Proposed Strategy Budget" },
+      { value: "3", label: "Core Growth Initiatives" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Evaluated organizational structure, 6 revenue models, and Porter's Value Chain to identify supply bottlenecks.",
+      "Conducted PESTEL and macro analysis, identifying risks from 78% raw material imports and Permendag No. 7/2024.",
+      "Benchmarked Prochiz against 3 dairy rivals, mapping its 59% e-commerce cheese share versus 4% total dairy share.",
+      "Analyzed 2021-2023 financial ratios and built a 2024-2025 revenue forecast projecting growth to Rp 1,069B.",
+      "Formulated 3 growth strategies via TOWS, IE, and Impact-Effort matrices with a Rp 20B budget and 2025 roadmap.",
+    ],
+
+    skills: [
+      "Strategic Management",
+      "External Analysis",
+      "Internal Analysis",
+      "Financial Analysis",
+      "Business Model Analysis",
+      "Competitor Benchmarking",
+      "Strategy Formulation",
+    ],
+
+    tools: [
+      "Strategic Framework",
+      "Google Sheet",
+      "Financial Statements",
+      "Canva",
+    ],
+
+    tags: [
+      "Strategic Management",
+      "Business Strategy",
+      "FMCG",
+    ],
+
+    credential: "https://drive.google.com/file/d/17Ik-W2cxkYpdgHEZEhJvZ5fF5Y9DIdMi/view?usp=sharing",
+  },
+
+  {
     id: 5,
     slug: "rekindle-product-owner",
     title: "ReKindle Product Development",
@@ -236,7 +238,7 @@ export const projects = [
     company: "ReKindle",
     role: "Product Owner & CEO",
     type: "Product Development",
-    category: "Other",
+    category: "Others",
     location: "Bandung, Indonesia",
     period: "Aug - Dec 2024",
     year: "2024",
@@ -286,58 +288,56 @@ export const projects = [
 
   {
     id: 6,
-    slug: "byu-marketing-plan-imotion",
-    title: "IMOTION Marketing Plan Competition",
-    shortTitle: "by.U Gen Z Strategy",
-    company: "IMOTION FEB UI",
+    slug: "trashure-project management-uiux",
+    title: "Trashure: Sustainable Waste Management UI/UX",
+    shortTitle: "Trashure UIUX",
+    company: "Trashure",
     role: "Team Member",
-    type: "Marketing Competition",
-    category: "Marketing",
-    location: "Bandung, Indonesia",
-    period: "Oct 2025",
-    year: "2025",
-    image: "/projects/IMOTION UI Projects.png",
+    type: "UI/UX Apps",
+    category: "Others",
+    location: "Jatinangor, Indonesia",
+    period: "Aug - Dec 2024",
+    year: "2024",
+    image: "/projects/Trashure Projects.png",
     description:
-      "Collaborated in a 4-person team to formulate a comprehensive marketing strategy positioning by.U as 'The Ultimate Second SIM' for Gen Z.",
+      "Collaborated in a 5-person team using the Scrum framework to design Trashure, a startup application focused on sustainable waste management and the circular economy.",
 
     // 3 Point out number
     highlights: [
-      { value: "150K", label: "New Gross Adds Target" },
-      { value: "3.12", label: "Cost-Benefit Ratio" },
-      { value: "Rp4.8K", label: "Acquisition Cost (CAC)" },
+      { value: "5", label: "Core Features Designed" },
+      { value: "40%", label: "Machine Cost Allocation" },
+      { value: "4", label: "Growth Engine Strategies" },
     ],
 
     // What I did
     responsibilities: [
-      "Collaborated to formulate 'The Ultimate Second SIM' positioning to overcome Gen Z's switching cost barrier without replacing their primary number.",
-      "Conducted TOWS and PEST analyses to evaluate dual-SIM market opportunities and mitigate oligopolistic industry threats.",
-      "Contributed to designing persona-based 'Mode Instan' and gamified loyalty programs like 'by.U Squad'.",
-      "Assisted in building a 3-month financial projection, achieving a highly efficient CAC of Rp 4,848 against a CLTV of Rp 166,909.",
-      "Structured an integrated 4-pillar execution timeline across Engagement, Acquisition, Revenue, and Loyalty phases.",
+      "Collaborated using the Scrum framework to align the product backlog and vision with circular economy goals and climate action initiatives.",
+      "Assisted in formulating 5 core business process stages, from scheduled waste collection and automated sorting to the distribution of recycled products like paving blocks and furniture.",
+      "Contributed to defining Acceptance Criteria through User Stories for various stakeholders, including customers, government, businesses, and communities.",
+      "Participated in designing a multi-channel growth engine strategy, incorporating government partnerships (Sticky), social media campaigns (Viral), and digital marketing (Paid).",
+      "Helped analyze the project's cost structure allocation, identifying processing machines (40%) and operational costs (27%) as the primary investments for the recycling plant.",
     ],
 
     skills: [
-      "Marketing Strategy",
-      "Market Segmentation",
-      "Financial Projection",
-      "Consumer Behavior",
+      "UI/UX Design",
+      "Product Management",
+      "Agile/Scrum Method",
+      "Business Strategy",
+      "Financial Planning",
     ],
 
     tools: [
-      "Strategic Framework",
-      "Microsoft Excel",
-      "Google Form",
-      "Google Docs",
+      "Figma",
       "Canva",
     ],
 
     tags: [
-      "Marketing Strategy",
-      "Financial Modeling",
-      "Gen Z Market",
+      "UI/UX",
+      "Product Management",
+      "Sustainability",
     ],
 
-    credential: "https://drive.google.com/file/d/1wP3Ts2quUxorzCvaliZ2YdgdVIvO2d-x/view",
+    credential: "https://drive.google.com/file/d/1a3CJJmLrSRgf6dOo6-ZTKcanMCfagwhw/view?usp=sharing",
   },
 
   {
@@ -345,7 +345,7 @@ export const projects = [
     slug: "bosch-business case-enterns",
     title: "ENTERNS UI Business Case Competition",
     shortTitle: "Bosch Wiper Strategy",
-    company: "IMOTION FEB UI",
+    company: "ENTERNS UI",
     role: "Team Member",
     type: "Business Competition",
     category: "Business",
@@ -455,6 +455,63 @@ export const projects = [
 
   {
     id: 9,
+    slug: "biteship-valuation",
+    title: "Biteship Valuation Project",
+    shortTitle: "Biteship Valuation",
+    company: "Biteship",
+    role: "Team Member",
+    type: "Valuation Project",
+    category: "Business",
+    location: "Jatinangor, Indonesia",
+    period: "Feb - Jun 2024",
+    year: "2024",
+    image: "/projects/Biteship Valuation Projects.png",
+    description:
+      "Conducted startup valuation research using multiple valuation frameworks, comparable startup benchmarks, and investment risk assessments.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "$13.1M", label: "Max Valuation Range Estimated" },
+      { value: "6", label: "Southeast Asian Benchmarks" },
+      { value: "12", label: "Investment Risks Evaluated" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Gathered data for Berkus, Scorecard, and Risk Factor Summation frameworks, helping the team project a $1.9M to $13.1M startup value.",
+      "Researched 6 SEA startups to find a $12.55M average valuation, providing a clear data baseline for our team's analysis. ",
+      "Collected data on 12 investment risks, helping the team identify operational and competitor vulnerabilities. ",
+      "Tracked 800% growth data and team profiles, clearly communicating facts to support the team's strategic assessment.",
+      "Compiled market facts to back up investment conclusions, helping the team make confident decisions on VC funding needs.",
+    ],
+
+    skills: [
+      "Startup Valuation",
+      "Financial Analysis",
+      "Peer Benchmarking",
+      "Risk Assessment",
+      "Due Diligence",
+    ],
+
+    tools: [
+      "Valuation Frameworks",
+      "Google Sheet",
+      "Google Docs",
+      "Canva",
+    ],
+
+    tags: [
+      "Startup Valuation",
+      "Financial Analysis",
+      "Market Research",
+      "Risk Assessment",
+    ],
+
+    credential: "https://drive.google.com/file/d/10o1wAM9BORKwy4OTcA5HzrN99VMBeMZh/view",
+  },
+
+  {
+    id: 10,
     slug: "bootcamp-data analysis-myskill",
     title: "Data Analysis: Fullstack Intensive Bootcamp",
     shortTitle: "Data Analysis Bootcamp",
@@ -513,114 +570,59 @@ export const projects = [
   },
 
   {
-    id: 10,
-    slug: "trashure-project management-uiux",
-    title: "Trashure: Sustainable Waste Management UI/UX",
-    shortTitle: "Trashure UIUX",
-    company: "Trashure",
-    role: "Team Member",
-    type: "UI/UX Apps",
-    category: "Other",
-    location: "Jatinangor, Indonesia",
-    period: "Aug - Dec 2024",
-    year: "2024",
-    image: "/projects/Trashure Projects.png",
-    description:
-      "Collaborated in a 5-person team using the Scrum framework to design Trashure, a startup application focused on sustainable waste management and the circular economy.",
-
-    // 3 Point out number
-    highlights: [
-      { value: "5", label: "Core Features Designed" },
-      { value: "40%", label: "Machine Cost Allocation" },
-      { value: "4", label: "Growth Engine Strategies" },
-    ],
-
-    // What I did
-    responsibilities: [
-      "Collaborated using the Scrum framework to align the product backlog and vision with circular economy goals and climate action initiatives.",
-      "Assisted in formulating 5 core business process stages, from scheduled waste collection and automated sorting to the distribution of recycled products like paving blocks and furniture.",
-      "Contributed to defining Acceptance Criteria through User Stories for various stakeholders, including customers, government, businesses, and communities.",
-      "Participated in designing a multi-channel growth engine strategy, incorporating government partnerships (Sticky), social media campaigns (Viral), and digital marketing (Paid).",
-      "Helped analyze the project's cost structure allocation, identifying processing machines (40%) and operational costs (27%) as the primary investments for the recycling plant.",
-    ],
-
-    skills: [
-      "UI/UX Design",
-      "Product Management",
-      "Agile/Scrum Method",
-      "Business Strategy",
-      "Financial Planning",
-    ],
-
-    tools: [
-      "Figma",
-      "Canva",
-    ],
-
-    tags: [
-      "UI/UX",
-      "Product Management",
-      "Sustainability",
-    ],
-
-    credential: "https://drive.google.com/file/d/1a3CJJmLrSRgf6dOo6-ZTKcanMCfagwhw/view?usp=sharing",
-  },
-
-  {
     id: 11,
-    slug: "prochiz-strategic-management-analysis",
-    title: "PT Mulia Boga Raya Tbk (Prochiz): Strategic Management",
-    shortTitle: "Prochiz Strategy Analysis",
-    company: "Prochiz",
-    role: "Team Member",
-    type: "Strategic Management Case Study",
-    category: "Business",
-    location: "Jatinangor, Indonesia",
-    period: "Aug - Dec 2024",
-    year: "2024",
-    image: "/projects/Prochiz Projects.png",
+    slug: "ihana-socks-analysis",
+    title: "Ihana Socks Data Analysis",
+    shortTitle: "Ihana Socks",
+    company: "Ihana Socks",
+    role: "Lead Data Analyst",
+    type: "Data Analytics Project",
+    category: "Data",
+    location: "Bandung, Indonesia",
+    period: "Sep - Dec 2023",
+    year: "2023",
+    image: "/projects/Ihana Projects.png",
     description:
-      "Collaborated in a 5-person team to conduct a comprehensive strategic management analysis, financial evaluation, and 2025 growth roadmap for PT Mulia Boga Raya Tbk (Prochiz).",
+      "Analyzed sales performance using SQL, KNIME, and Tableau to identify opportunities for inventory optimization, sales growth, and better business decisions.",
 
     // 3 Point out number
     highlights: [
-      { value: "4", label: "Dairy Players Benchmarked" },
-      { value: "Rp 20B", label: "Proposed Strategy Budget" },
-      { value: "3", label: "Core Growth Initiatives" },
+      { value: "65K+", label: "E-Commerce Rows Cleaned" },
+      { value: "4", label: "Analytics Team Members Led" },
+      { value: "3", label: "Core Strategic Initiatives" },
     ],
 
     // What I did
     responsibilities: [
-      "Evaluated organizational structure, 6 revenue models, and Porter's Value Chain to identify supply bottlenecks.",
-      "Conducted PESTEL and macro analysis, identifying risks from 78% raw material imports and Permendag No. 7/2024.",
-      "Benchmarked Prochiz against 3 dairy rivals, mapping its 59% e-commerce cheese share versus 4% total dairy share.",
-      "Analyzed 2021-2023 financial ratios and built a 2024-2025 revenue forecast projecting growth to Rp 1,069B.",
-      "Formulated 3 growth strategies via TOWS, IE, and Impact-Effort matrices with a Rp 20B budget and 2025 roadmap.",
+      "Led a 4-person team and managed client communication to clearly define goals for optimizing Shopee sales and reducing dead stock.",
+      "Conducted cleaning 65K+ rows of messy data in Excel, easily adapting to solve complex outlier issues.",
+      "Did hands-on analysis using PostgreSQL and KNIME, applying critical thinking to run forecasting models with the team.",
+      "Built clear Tableau dashboards to visualize data, logically structuring our findings into a consulting deck for the client.",
+      "Delivered 3 key strategies to the client, helping them make confident business decisions on product bundling and holiday sales.",
     ],
 
     skills: [
-      "Strategic Management",
-      "External Analysis",
-      "Internal Analysis",
-      "Financial Analysis",
-      "Business Model Analysis",
-      "Competitor Benchmarking",
-      "Strategy Formulation",
+      "Business Intelligence",
+      "Data Cleaning",
+      "Data Analysis",
+      "Data Visualization",
+      "Dashboard",
+      "Client Presentation",
     ],
 
     tools: [
-      "Strategic Framework",
-      "Google Sheet",
-      "Financial Statements",
-      "Canva",
+      "PostgreSQL",
+      "KNIME",
+      "Tableau",
+      "Microsoft Excel",
     ],
 
     tags: [
-      "Strategic Management",
-      "Business Strategy",
-      "FMCG",
+      "Business Intelligence",
+      "Data Analysis",
+      "KNIME",
     ],
 
-    credential: "https://drive.google.com/file/d/17Ik-W2cxkYpdgHEZEhJvZ5fF5Y9DIdMi/view?usp=sharing",
+    credential: "https://drive.google.com/file/d/16eFZKWxdYZKRGySMO24M48QGBPvCUIkD/view",
   },
 ];

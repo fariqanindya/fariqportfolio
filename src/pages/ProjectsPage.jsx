@@ -9,7 +9,10 @@ import DetailModal from "../components/DetailModal";
 
 const categories = [
   "All Projects",
-  ...new Set(projects.map((project) => project.category)),
+  "Business",
+  "Marketing",
+  "Data",
+  "Others",
 ];
 
 const ProjectsPage = () => {

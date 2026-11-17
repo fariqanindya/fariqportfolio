@@ -21,7 +21,16 @@ const fadeUp = {
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const featuredProjects = projects.slice(0, 3);
+
+  // Top 3 featured projects chosen by user: Prochiz, ReKindle, and Ihana
+  const featuredSlugs = [
+    "prochiz-strategic-management-analysis",
+    "rekindle-product-owner",
+    "ihana-socks-analysis",
+  ];
+  const featuredProjects = featuredSlugs
+    .map((slug) => projects.find((project) => project.slug === slug))
+    .filter(Boolean);
 
   return (
     <section

@@ -5,22 +5,22 @@ import { ArrowUpRight } from "lucide-react";
 // Exactly 3 key achievement numbers for the landing page
 const landingAchievementNumbers = [
   {
+    value: "10+",
+    suffix: "",
+    label: "Completed Projects",
+    sublabel: "Business, Marketing, Data, Others",
+  },
+  {
     value: "3",
-    suffix: "Roles",
+    suffix: "",
     label: "Internship Experiences",
-    sublabel: "Adira Finance, ParagonCorp, Eigerindo MPI",
+    sublabel: "Eigerindo MPI, ParagonCorp, Adira Finance",
   },
   {
-    value: "3",
-    suffix: "Cases",
-    label: "Case Competitions",
-    sublabel: "Unilever, BOSCH, 7Preneur",
-  },
-  {
-    value: "1st",
-    suffix: "Author",
-    label: "SINTA 4 Journal",
-    sublabel: "Peer-Reviewed Research",
+    value: "5",
+    suffix: "",
+    label: "Business Competitions",
+    sublabel: "Unilever, Bosch, Travoy, etc.",
   },
 ];
 

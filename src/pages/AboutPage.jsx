@@ -194,7 +194,7 @@ const AboutPage = () => {
         >
           <div className="mb-6 flex items-center justify-between sm:mb-8">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#16382E]/10 sm:h-10 sm:w-10">
+              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#D4A843]/10 sm:h-10 sm:w-10">
                 <BriefcaseBusiness size={18} className="text-[#16382E]" />
               </span>
               <h2 className="text-xl font-semibold tracking-tight text-[#16382E] sm:text-2xl">
@@ -206,92 +206,133 @@ const AboutPage = () => {
             </span>
           </div>
 
-          <div className="space-y-6">
-            {experiences.map((exp, index) => (
-              <motion.article
-                key={exp.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: index * 0.08 }}
-                className="rounded-3xl border border-[#E8E6DC] bg-white/90 p-5 sm:p-7 transition-all duration-300 hover:border-[#D4A843]/50 hover:shadow-lg"
-              >
-                {/* HEADER */}
-                <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
-                  <div>
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="flex items-center gap-1 text-xs font-semibold text-[#D4A843] uppercase tracking-wider">
-                        <Building2 size={13} />
-                        {exp.company}
-                      </span>
-                      {exp.current && (
-                        <span className="rounded-full bg-[#D4A843]/20 px-2.5 py-0.5 text-[10px] font-semibold text-[#16382E]">
-                          Current
-                        </span>
-                      )}
-                    </div>
+          <div className="relative">
+            {experiences.map((exp, index) => {
+              const isFirst = index === 0;
+              const isLast = index === experiences.length - 1;
 
-                    <h3 className="mt-1 text-lg font-semibold tracking-tight text-[#16382E] sm:text-xl">
-                      {exp.position}
-                    </h3>
+              return (
+                <div
+                  key={exp.id}
+                  className="relative pl-8 sm:pl-12 pb-8 sm:pb-10 last:pb-0"
+                >
+                  {/* VERTICAL TIMELINE LINE SEGMENT */}
+                  {!isLast && (
+                    <div
+                      aria-hidden="true"
+                      className={`absolute left-[15px] sm:left-[21px] w-[2px] z-0 ${isFirst
+                        ? "top-7 sm:top-8 bottom-0 bg-gradient-to-b from-[#16382E] to-[#D4A843]"
+                        : "top-0 bottom-0 bg-gradient-to-b from-[#D4A843] to-[#D4A843]/60"
+                        }`}
+                    />
+                  )}
+                  {isLast && (
+                    <div
+                      aria-hidden="true"
+                      className="absolute left-[15px] sm:left-[21px] top-0 h-7 sm:h-8 w-[2px] bg-[#D4A843]/60 z-0"
+                    />
+                  )}
 
-                    <div className="mt-1.5 flex flex-wrap items-center gap-3 text-xs text-[#777D75]">
-                      <span className="flex items-center gap-1">
-                        <CalendarDays size={13} className="text-[#D4A843]" />
-                        {exp.period}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <MapPin size={13} className="text-[#D4A843]" />
-                        {exp.location}
-                      </span>
-                    </div>
+                  {/* TIMELINE NODE (CLEAN DOT WITHOUT NUMBERS) */}
+                  <div className="absolute left-[16px] sm:left-[22px] top-7 sm:top-8 -translate-x-1/2 -translate-y-1/2 z-10">
+                    {exp.current ? (
+                      <div className="flex h-5 w-5 sm:h-6 sm:w-6 items-center justify-center rounded-full border-2 border-[#16382E] bg-[#16382E] shadow-sm ring-4 ring-[#D4A843]/30">
+                        <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#D4A843] animate-pulse" />
+                      </div>
+                    ) : (
+                      <div className="flex h-5 w-5 sm:h-6 sm:w-6 items-center justify-center rounded-full border-2 border-[#D4A843] bg-white shadow-sm">
+                        <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#D4A843]" />
+                      </div>
+                    )}
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={() => setSelectedItem(exp)}
-                    className="inline-flex w-fit items-center gap-1.5 rounded-full bg-[#16382E] px-4 py-2 text-xs font-semibold text-white transition-all hover:bg-[#245342]"
+                  {/* ARTICLE CARD */}
+                  <motion.article
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.45, delay: index * 0.08 }}
+                    className="rounded-3xl border border-[#E8E6DC] bg-white/90 p-5 sm:p-7 transition-all duration-300 hover:border-[#D4A843]/50 hover:shadow-lg"
                   >
-                    <span>View Details</span>
-                    <ArrowUpRight size={14} />
-                  </button>
-                </div>
+                    {/* HEADER */}
+                    <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
+                      <div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="flex items-center gap-1 text-xs font-semibold text-[#D4A843] uppercase tracking-wider">
+                            <Building2 size={13} />
+                            {exp.company}
+                          </span>
+                          {exp.current && (
+                            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#16382E] px-2.5 py-0.5 text-[10px] font-semibold text-[#D4A843]">
+                              <span className="h-1.5 w-1.5 rounded-full bg-[#D4A843] animate-pulse" />
+                              Current
+                            </span>
+                          )}
+                        </div>
 
-                {/* SUMMARY */}
-                <p className="mt-3 text-xs leading-relaxed text-[#555D55] sm:text-sm">
-                  {exp.summary}
-                </p>
+                        <h3 className="mt-1.5 text-lg font-semibold tracking-tight text-[#16382E] sm:text-xl">
+                          {exp.position}
+                        </h3>
 
-                {/* 3 HIGHLIGHT METRICS (COMPACT) */}
-                <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3 sm:gap-3 border-t border-[#E8E6DC] pt-4">
-                  {exp.highlights.map((h, i) => (
-                    <div
-                      key={i}
-                      className="rounded-xl border border-[#E8E6DC] bg-[#F8F7F2] p-3 text-center"
-                    >
-                      <p className="text-base font-bold text-[#16382E] sm:text-lg">
-                        {h.value}
-                      </p>
-                      <p className="text-[11px] text-[#777D75] line-clamp-1">
-                        {h.label}
-                      </p>
+                        <div className="mt-1.5 flex flex-wrap items-center gap-3 text-xs text-[#777D75]">
+                          <span className="flex items-center gap-1">
+                            <CalendarDays size={13} className="text-[#D4A843]" />
+                            {exp.period}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <MapPin size={13} className="text-[#D4A843]" />
+                            {exp.location}
+                          </span>
+                        </div>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() => setSelectedItem(exp)}
+                        className="inline-flex w-fit items-center gap-1.5 rounded-full bg-[#16382E] px-4 py-2 text-xs font-semibold text-white transition-all hover:bg-[#245342]"
+                      >
+                        <span>View Details</span>
+                        <ArrowUpRight size={14} />
+                      </button>
                     </div>
-                  ))}
-                </div>
 
-                {/* TAGS */}
-                <div className="mt-4 flex flex-wrap gap-1.5">
-                  {exp.tags.slice(0, 4).map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-[#F8F7F2] px-2.5 py-0.5 text-[11px] text-[#555D55]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                    {/* SUMMARY */}
+                    <p className="mt-3 text-xs leading-relaxed text-[#555D55] sm:text-sm">
+                      {exp.summary}
+                    </p>
+
+                    {/* 3 HIGHLIGHT METRICS (COMPACT) */}
+                    <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3 sm:gap-3 border-t border-[#E8E6DC] pt-4">
+                      {exp.highlights.map((h, i) => (
+                        <div
+                          key={i}
+                          className="rounded-xl border border-[#E8E6DC] bg-[#F8F7F2] p-3 text-center"
+                        >
+                          <p className="text-base font-bold text-[#16382E] sm:text-lg">
+                            {h.value}
+                          </p>
+                          <p className="text-[11px] text-[#777D75] line-clamp-1">
+                            {h.label}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* TAGS */}
+                    <div className="mt-4 flex flex-wrap gap-1.5">
+                      {exp.tags.slice(0, 4).map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full bg-[#F8F7F2] px-2.5 py-0.5 text-[11px] text-[#555D55]"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </motion.article>
                 </div>
-              </motion.article>
-            ))}
+              );
+            })}
           </div>
         </section>
 
@@ -560,11 +601,15 @@ const AboutPage = () => {
           id="languages"
           className="mb-14 border-t border-[#E8E6DC] pt-10 sm:mb-16 sm:pt-12"
         >
-          <div className="mb-6 flex items-center gap-2.5">
-            <LanguagesIcon size={20} className="text-[#D4A843]" />
-            <h2 className="text-xl font-semibold text-[#16382E] sm:text-2xl">
-              Languages
-            </h2>
+          <div className="mb-6 flex items-center justify-between sm:mb-8">
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#D4A843]/15 sm:h-10 sm:w-10">
+                <LanguagesIcon size={18} className="text-[#16382E]" />
+              </span>
+              <h2 className="text-xl font-semibold text-[#16382E] sm:text-2xl">
+                Languages
+              </h2>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
