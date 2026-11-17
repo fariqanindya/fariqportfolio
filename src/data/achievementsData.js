@@ -103,7 +103,7 @@ export const competitions = [
   {
     id: 3,
     title: "Market Town Business Case Competition",
-    company: "7Preneur",
+    company: "Market Town",
     organizer: "BEM Kema Unpad",
     role: "Market Research",
     achievement: "Semifinalist",

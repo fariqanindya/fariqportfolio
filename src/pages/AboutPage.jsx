@@ -308,7 +308,7 @@ const AboutPage = () => {
                 <Trophy size={18} className="text-[#16382E]" />
               </span>
               <h2 className="text-xl font-semibold tracking-tight text-[#16382E] sm:text-2xl">
-                Achievements & Competitions
+                Competitions
               </h2>
             </div>
             <span className="text-xs font-semibold tracking-widest text-[#777D75] uppercase">

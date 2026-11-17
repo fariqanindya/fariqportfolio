@@ -339,4 +339,288 @@ export const projects = [
 
     credential: "https://drive.google.com/file/d/1wP3Ts2quUxorzCvaliZ2YdgdVIvO2d-x/view",
   },
+
+  {
+    id: 7,
+    slug: "bosch-business case-enterns",
+    title: "ENTERNS UI Business Case Competition",
+    shortTitle: "Bosch Wiper Strategy",
+    company: "IMOTION FEB UI",
+    role: "Team Member",
+    type: "Business Competition",
+    category: "Business",
+    location: "Bandung, Indonesia",
+    period: "Nov 2024",
+    year: "2024",
+    image: "/projects/ENTERNS UI Projects.png",
+    description:
+      "Formulated a holistic business growth strategy to overcome Bosch's 15% sales decline, targeting Gen Z and Millennials through product innovation and targeted campaigns.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "30%", label: "Projected Sales Growth" },
+      { value: "Rp 970B", label: "Positive NPV Generated" },
+      { value: "Gen Z & Millennials", label: "Core Market Targeted" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Identified Bosch's 15% sales decline root cause, logically structuring a holistic strategy to target Gen Z and Millennials.",
+      "Analyzed market trends and competitor gaps using PESTLE and Porter's Five Forces to support the team's strategic decisions.",
+      "Guided the concept for Hybrid Advantage wipers, collaborating to design a tailored solution for Indonesian SUV and MPV drivers.",
+      "Developed clear online and offline promotional strategies, adapting influencer content and trade-in events to boost brand recall.",
+      "Calculated a positive Rp 970 Billion NPV, effectively communicating the financial feasibility of our strategy to stakeholders.",
+    ],
+
+    skills: [
+      "Structured Thinking",
+      "Problem Analysis",
+      "Business Strategy",
+      "Competitive Positioning",
+      "Product Development",
+      "Financial Projection",
+    ],
+
+    tools: [
+      "Strategic Framework",
+      "Google Form",
+      "Excel",
+      "Word",
+      "Canva",
+    ],
+
+    tags: [
+      "Business Strategy",
+      "Bosch Product",
+      "Financial Projection",
+    ],
+
+    credential: "https://drive.google.com/file/d/1huU3lL09eTmBXkapW6hjBhXzbRCzr3-D/view",
+  },
+
+  {
+    id: 8,
+    slug: "7preneur-business case-markettown",
+    title: "Market Town Business Case Competition",
+    shortTitle: "Sevuel Digital Strategy",
+    company: "Market Town Unpad",
+    role: "Team Member",
+    type: "Business Competition",
+    category: "Business",
+    location: "Jatinangor, Indonesia",
+    period: "Oct 2024",
+    year: "2024",
+    image: "/projects/Market Town Projects.png",
+    description:
+      "Developed a comprehensive 3C (Community, Campaign, Customer Centric) strategy to overcome low brand awareness and educate the market on SevenFit's meal replacement products.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "3C", label: "Strategic Framework Developed" },
+      { value: "O2O", label: "Omnichannel Campaign (Sevuel Run)" },
+      { value: "Loyalty App", label: "Data-Driven Retention Strategy" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Identified the core problem of low brand awareness and market education for Sevuel, logically structuring our 3C strategic response.",
+      "Analyzed competitor gaps and global health trends using SWOT and Porter's Five Forces to help the team make strategic decisions.",
+      "Collaborated to build the 3C digital strategy (Community, Campaign, Customer Centric) to boost SevenFit's customer loyalty.",
+      "Designed an actionable offline event (\"Sevuel Run\") and influencer campaigns to smoothly adapt the brand to active lifestyles.",
+      "Guided the concept of a mobile loyalty app and data-driven innovations to strengthen long-term customer engagement for the brand.",
+    ],
+
+    skills: [
+      "Structured Thinking",
+      "Market Research",
+      "Brand Strategy",
+      "Customer Retention",
+      "Omnichannel Marketing",
+    ],
+
+    tools: [
+      "Strategic Framework",
+      "Word",
+      "Canva",
+    ],
+
+    tags: [
+      "Business Strategy",
+      "Brand Strategy",
+      "Omnichannel Marketing",
+    ],
+
+    credential: "https://drive.google.com/file/d/19RJXK7byDBR_pCDNx5-5GPtq4V1bjkRq/view",
+  },
+
+  {
+    id: 9,
+    slug: "bootcamp-data analysis-myskill",
+    title: "Data Analysis: Fullstack Intensive Bootcamp",
+    shortTitle: "Data Analysis Bootcamp",
+    company: "MySkill",
+    role: "Data Analyst",
+    type: "Data Bootcamp",
+    category: "Data",
+    location: "Bandung, Indonesia",
+    period: "Jan - Feb 2024",
+    year: "2024",
+    image: "/projects/MySkill Projects.png",
+    description:
+      "Completed an intensive 20-session bootcamp program covering basic statistics, data cleansing, SQL, Python, and data visualization to solve business case studies.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "SQL", label: "Google BigQuery" },
+      { value: "Python", label: "Google Colab" },
+      { value: "Looker Studio", label: "Data Visualization" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Actively participated in 20 intensive class sessions focusing on data formatting, data cleansing, basic statistics, SQL, Python, and data visualization.",
+      "Extracted and analyzed e-commerce datasets using SQL in Google BigQuery to identify transaction trends, category performance, and the most popular payment methods.",
+      "Performed data manipulation, filtering, and dataframe merging using the Pandas library in the Google Colab environment.",
+      "Visualized business insights from Python using Matplotlib to evaluate campaign impacts and compare average sales on weekdays versus weekends.",
+      "Built interactive analytical dashboards with Looker Studio to monitor business KPIs such as Total Value Sales, Net Profit, and Average Order Value (AOV)."
+    ],
+
+    skills: [
+      "Data Analysis",
+      "Data Cleansing",
+      "Data Visualization",
+      "Statistical Analysis",
+      "Business Intelligence",
+    ],
+
+    tools: [
+      "SQL",
+      "Python",
+      "Google BigQuery",
+      "Google Colab",
+      "Looker Studio",
+      "Canva",
+    ],
+
+    tags: [
+      "Data Analytics",
+      "Intensive Bootcamp",
+      "SQL & Python",
+      "Dashboard",
+    ],
+
+    credential: "https://drive.google.com/drive/folders/1OKSQbyquNhQMXbkH1KOyDYClnpGjEZWD?usp=sharing",
+  },
+
+  {
+    id: 10,
+    slug: "trashure-project management-uiux",
+    title: "Trashure: Sustainable Waste Management UI/UX",
+    shortTitle: "Trashure UIUX",
+    company: "Trashure",
+    role: "Team Member",
+    type: "UI/UX Apps",
+    category: "Other",
+    location: "Jatinangor, Indonesia",
+    period: "Aug - Dec 2024",
+    year: "2024",
+    image: "/projects/Trashure Projects.png",
+    description:
+      "Collaborated in a 5-person team using the Scrum framework to design Trashure, a startup application focused on sustainable waste management and the circular economy.",
+
+    // 3 Point out number
+    highlights: [
+      { value: "5", label: "Core Features Designed" },
+      { value: "40%", label: "Machine Cost Allocation" },
+      { value: "4", label: "Growth Engine Strategies" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Collaborated using the Scrum framework to align the product backlog and vision with circular economy goals and climate action initiatives.",
+      "Assisted in formulating 5 core business process stages, from scheduled waste collection and automated sorting to the distribution of recycled products like paving blocks and furniture.",
+      "Contributed to defining Acceptance Criteria through User Stories for various stakeholders, including customers, government, businesses, and communities.",
+      "Participated in designing a multi-channel growth engine strategy, incorporating government partnerships (Sticky), social media campaigns (Viral), and digital marketing (Paid).",
+      "Helped analyze the project's cost structure allocation, identifying processing machines (40%) and operational costs (27%) as the primary investments for the recycling plant.",
+    ],
+
+    skills: [
+      "UI/UX Design",
+      "Product Management",
+      "Agile/Scrum Method",
+      "Business Strategy",
+      "Financial Planning",
+    ],
+
+    tools: [
+      "Figma",
+      "Canva",
+    ],
+
+    tags: [
+      "UI/UX",
+      "Product Management",
+      "Sustainability",
+    ],
+
+    credential: "https://drive.google.com/file/d/1a3CJJmLrSRgf6dOo6-ZTKcanMCfagwhw/view?usp=sharing",
+  },
+
+  {
+    id: 11,
+    slug: "prochiz-strategic-management-analysis",
+    title: "PT Mulia Boga Raya Tbk (Prochiz): Strategic Management",
+    shortTitle: "Prochiz Strategy Analysis",
+    company: "Prochiz",
+    role: "Team Member",
+    type: "Strategic Management Case Study",
+    category: "Business",
+    location: "Jatinangor, Indonesia",
+    period: "Aug - Dec 2024",
+    year: "2024",
+    image: "/projects/Prochiz Projects.png",
+    description:
+      "Collaborated in a 5-person team to conduct a comprehensive strategic management analysis, financial evaluation, and 2025 growth roadmap for PT Mulia Boga Raya Tbk (Prochiz).",
+
+    // 3 Point out number
+    highlights: [
+      { value: "4", label: "Dairy Players Benchmarked" },
+      { value: "Rp 20B", label: "Proposed Strategy Budget" },
+      { value: "3", label: "Core Growth Initiatives" },
+    ],
+
+    // What I did
+    responsibilities: [
+      "Evaluated organizational structure, 6 revenue models, and Porter's Value Chain to identify supply bottlenecks.",
+      "Conducted PESTEL and macro analysis, identifying risks from 78% raw material imports and Permendag No. 7/2024.",
+      "Benchmarked Prochiz against 3 dairy rivals, mapping its 59% e-commerce cheese share versus 4% total dairy share.",
+      "Analyzed 2021-2023 financial ratios and built a 2024-2025 revenue forecast projecting growth to Rp 1,069B.",
+      "Formulated 3 growth strategies via TOWS, IE, and Impact-Effort matrices with a Rp 20B budget and 2025 roadmap.",
+    ],
+
+    skills: [
+      "Strategic Management",
+      "External Analysis",
+      "Internal Analysis",
+      "Financial Analysis",
+      "Business Model Analysis",
+      "Competitor Benchmarking",
+      "Strategy Formulation",
+    ],
+
+    tools: [
+      "Strategic Framework",
+      "Google Sheet",
+      "Financial Statements",
+      "Canva",
+    ],
+
+    tags: [
+      "Strategic Management",
+      "Business Strategy",
+      "FMCG",
+    ],
+
+    credential: "https://drive.google.com/file/d/17Ik-W2cxkYpdgHEZEhJvZ5fF5Y9DIdMi/view?usp=sharing",
+  },
 ];
